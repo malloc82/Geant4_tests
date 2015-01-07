@@ -1,0 +1,5 @@
+.directory
+.kdev4/
+build/
+phase_space/
+*~
