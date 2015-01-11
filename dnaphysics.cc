@@ -69,12 +69,12 @@ int main(int argc,char** argv)
  
   // Construct the default run manager
 
-//#ifdef G4MULTITHREADED
-  //G4MTRunManager* runManager = new G4MTRunManager;
+#ifdef G4MULTITHREADED
+  G4MTRunManager* runManager = new G4MTRunManager;
   //runManager->SetNumberOfThreads(3);
-//#else
+#else
 G4RunManager* runManager = new G4RunManager;  
-//#endif
+#endif
 
   
   // Set mandatory user initialization classes
