@@ -6,14 +6,14 @@ The code is working with the Geant4 version 10.01 compiled with the multithread 
 
   1. create the directory phase_space (for output files) at the same level of the main file
   2. copy the file proton.mac in the build directory
-  3. find out where the geant4 is installed, import the file
-     <geant4 share dir>/geant4make/geant4make.sh to setup enviroment variables
+  3. find out where the geant4 is installed, source the script
+     \<geant4 share dir\>/geant4make/geant4make.sh to setup enviroment variables
   4. to start the run, two arguments are requested as input:
      the file.mac where the gun properties are set and a string with a name
      for the outputfiles:
 
     ```Shell
-    ./dnaphysics proton.mac outputFileName)
+    ./dnaphysics proton.mac <output filename>
     ```
 
 ## Output:
